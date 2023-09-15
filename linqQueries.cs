@@ -52,7 +52,7 @@ public class linqQueries
         return from book in listaBooks where book.PageCount>=450 orderby book.PageCount descending select book;
     }
 
-    // public IEnumerable<Book> LibrosRecientes(){
-    //     return from book in listaBooks where
-    // }
+    public IEnumerable<Book> LibrosRecientes(){
+        return from book in listaBooks.Take[3]
+    }
 }
